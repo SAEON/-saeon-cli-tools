@@ -62,7 +62,7 @@ const describedFn = describe(
 )
 
 // Build the CLI
-const cli = describe({
+const cli = args => describe({
   fn: describedFn, // <cli> fn -a something -b 42
 
   // Sub-commands
@@ -77,6 +77,8 @@ const cli = describe({
   title: 'Some title',
   description: 'Some description'
 })
+
+cli(process.argv.slice(2))
 ```
 
 # Local development
