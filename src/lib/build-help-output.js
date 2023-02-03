@@ -36,7 +36,6 @@ export default async (notice = '', config) => {
   }
 
   return `${title}
-
 ${errorMsg}
 
 Commands${cmdsText}

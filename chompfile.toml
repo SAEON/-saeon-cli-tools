@@ -17,7 +17,7 @@ deps = [
 [task.template-options]
 ignore-path = '.prettierignore'
 loglevel = 'warn'
-files = 'src/**/*.js example/**/*.js'
+files = 'src/**/*.js example/**/*.js README.md'
 
 [[task]]
 name = 'publish:major'
