@@ -1,6 +1,6 @@
 import arg from 'arg'
 
-export default flags => {
+export default (flags = {}) => {
   if (typeof flags !== 'object') {
     throw new Error('CLI functions must accept a single object as an argument')
   }
