@@ -23,16 +23,16 @@ files = 'src/**/*.js example/**/*.js README.md'
 name = 'publish:major'
 env = { TC='utc' }
 deps = ['build']
-run = 'node ./scripts/publish.js -p @saeon/cli-tools -s major'
+run = 'node scripts/publish.js -p @saeon/cli-tools -s major'
 
 [[task]]
 name = 'publish:minor'
 env = { TC='utc' }
 deps = ['build']
-run = 'node ./scripts/publish.js -p @saeon/cli-tools -s minor'
+run = 'node scripts/publish.js -p @saeon/cli-tools -s minor'
 
 [[task]]
 name = 'publish:patch'
 env = { TC='utc' }
 deps = ['build']
-run = 'node ./scripts/publish.js -p @saeon/cli-tools -s patch'
+run = 'node scripts/publish.js -p @saeon/cli-tools -s patch'
