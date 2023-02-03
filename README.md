@@ -184,7 +184,7 @@ cli(process.argv.slice(2))
 
 Running the nested example above, this is the output
 
-```sh
+```txt
 $ sdp
 CLI (@saeon/cli-tools v0.2.0): CLI Example
 Unknown command ""
@@ -197,7 +197,7 @@ Commands
  sub-cmd                              [Cmd]  Example of nested sub-command. Sub cmds and fns are hidden from top level output
 ```
 
-```sh
+```txt
 $ sdp sub-cmd
 CLI (@saeon/cli-tools v0.2.0): Sub command
 Unknown command ""
@@ -207,7 +207,7 @@ Commands
  sub-sub-cmd      [Cmd]  Build deeply nested CLIs like this
 ```
 
-```sh
+```txt
 $ sdp sub-cmd sub-sub-cmd
 CLI (@saeon/cli-tools v0.2.0): Sub-sub command
 Unknown command ""
