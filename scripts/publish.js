@@ -36,7 +36,11 @@ switch (SEMVER) {
 }
 
 exec('git add .')
-exec(`git commit -m "Bumped ${PACKAGE} ${SEMVER}" --no-verify`)
+try {
+  exec(`git commit -m "Bumped ${PACKAGE} ${SEMVER}" --no-verify`) 
+} catch (error) {
+  console.log('TODO - not sure why this happens')
+}
 
 // Publish to NPM
 exec('npm init --scope=@saeon')

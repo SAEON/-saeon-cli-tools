@@ -1,6 +1,6 @@
 {
   "name": "@saeon/cli-tools",
-  "version": "0.5.0",
+  "version": "0.1.0",
   "description": "Build deeply nested, self-documenting CLI applications dynamically and declaratively.",
   "type": "module",
   "files": [
